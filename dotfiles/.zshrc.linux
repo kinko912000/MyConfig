@@ -1,0 +1,44 @@
+
+# Terminal Colorの設定
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
+alias ls='ls -alh --color'
+alias vi='/usr/local/bin/vim'
+alias vim='/usr/local/bin/vim'
+
+export PATH
+
+# man path
+MANPATH=/usr/local/man:$MANPATH
+export MANPATH
+INFOPATH=/usr/local/info:$INFOPATH
+export INFOPATH
+
+# Java
+export JAVA_HOME=/usr/java/default
+export PATH=$JAVA_HOME/bin:$PATH
+
+# Maven2
+export MAVEN_HOME=/usr/local/apache-maven-2.2.1
+export PATH=$MAVEN_HOME/bin:$PATH
+export MAVEN_OPTS=-Xmx1024M
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+export PATH=$PATH:$HOME/.gem/ruby/1.8/bin
+export PATH=/opt/firefox:$PATH
+
+export PATH=$PATH:$HOME/.cabal/bin
+
+# node
+export NODE_PATH=$NODE_PATH:$(npm prefix -g 2>/dev/null)/lib/node_modules
+export PATH=$PATH:$(npm bin -g 2>/dev/null)
+
+
+# Go Lang
+export CGO_ENABLED=1
+export GOPATH=$HOME/dev/go
+export PATH=$PATH:$(go env GOROOT)/bin:$GOPATH/bin
