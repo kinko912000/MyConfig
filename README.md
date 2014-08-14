@@ -10,6 +10,15 @@ chmod +x diff-highlight
 sudo mv diff-highlight /usr/local/bin/diff-highlight
 ```
 
+- .netrcの設定
+```
+cd ~
+vim .netrc
+
+machine github.com
+login user_name
+password user_password
+```
 ### 一つずつ設定する
 #### ゆろよろさんのブログにしたがって実行（参考1)
 
