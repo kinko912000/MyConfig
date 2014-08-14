@@ -4,6 +4,12 @@ MyConfig
 
 ./setup.sh
 
+- diff-highlightの設定
+```
+chmod +x diff-highlight
+sudo mv diff-highlight /usr/local/bin/diff-highlight
+```
+
 ### 一つずつ設定する
 #### ゆろよろさんのブログにしたがって実行（参考1)
 
