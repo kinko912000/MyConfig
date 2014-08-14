@@ -14,7 +14,7 @@ DOT_FILES=( .zsh .zshrc .zshrc.custom .zshrc.alias .zshrc.linux .zshrc.osx .ctag
 
 for file in ${DOT_FILES[@]}
 do
-    ln -s $HOME/dotfiles/$file $HOME/$file
+    ln -s $HOME/MyConfig/dotfiles/$file $HOME/$file
     done
 
 # install oh-my-zsh
